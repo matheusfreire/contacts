@@ -1,2 +1,18 @@
-<h1>Home#contato</h1>
-<p>Find me in app/views/home/contato.html.erb</p>
+<% content_for :head do %>
+    <script>
+        get_info();
+    </script>
+<% end %>
+<h1>Contato</h1>
+
+<%= form_for @contact, url: home_send_contato_path ,html: {:class => "form-horizontal"} do |f| %>
+
+    <input type="hidden" name="contact[storage]" id="contact_storage">
+
+    <div class="form-group">
+      <label>Enter your email</label>
+      <%= f.email_field :email %>
+    </div>
+
+    <%= f.submit :value => "Enviar" %>
+<% end %>
