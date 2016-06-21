@@ -33,14 +33,18 @@ As many Ruby application we use Rails as framework.
 Clone repo:
 
 In cloned repo, run:
+
     bundle install
     rake db:migrate
 
 * Database creation
+
 Execute the next command, only after clone the repo.
-rake db:setup
+
+    rake db:setup
 
 After, or any modification made, run:
+    
     rails db:migrate
 
 * Database initialization
