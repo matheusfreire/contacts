@@ -52,7 +52,8 @@ After, or any modification made, run:
 
 
 * Deployment instructions
-To run application use:
-    rails s -b 0.0.0.0
+    To run application use:
+    
+        rails s -b 0.0.0.0
 
 Then, go to your browser and write: http://localhost:3000
